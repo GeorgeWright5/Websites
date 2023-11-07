@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoMart - Your Eco-Friendly Store</title>
+    <style>
+        html, body {
+            height: 100%; /* Make sure the page fills the viewport */
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column; /* Stack the content vertically */
+            background-color: #d9f0d1; /* Using the provided light green shade */
+        }
+
+        .header {
+            background-color: #d9f0d1; /* Light green background */
+            color: #333;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            max-width: 100px; /* Smaller logo size */
+            height: auto;
+        }
+
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+        }
+
+            .search-bar input[type="text"] {
+                padding: 10px;
+                margin-right: 10px;
+                width: 50%;
+            }
+
+            .search-bar input[type="submit"] {
+                padding: 10px;
+            }
+
+        .navbar {
+            background-color: #a5d1a7; /* A complementary green for the navbar */
+            overflow: hidden;
+        }
+
+            .navbar a {
+                float: left;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 20px;
+                text-decoration: none;
+                transition: background-color 0.3s;
+            }
+
+                .navbar a:hover {
+                    background-color: #94c295; /* A lighter green for hover effects */
+                }
+
+        .main {
+            flex-grow: 1; /* Allow main content to grow and fill the space */
+            margin: 15px;
+            padding: 15px;
+            background-color: #d9f0d1;
+            /* Remove the min-height here to allow the body to stretch */
+        }
+
+        .footer {
+            background-color: #a5d1a7; /* Same as the navbar background */
+            color: white;
+            text-align: center;
+            padding: 1px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div></div> <!-- Placeholder for left side of the header -->
+        <div class="search-bar">
+            <input type="text" placeholder="Search for eco-friendly products...">
+            <input type="submit" value="Search">
+        </div>
+        <div>
+            <img src="ecomart-logo.png" alt="EcoMart Logo" class="logo">
+        </div>
+    </div>
+
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div class="main">
+        <h2>About EcoMart</h2>
+        <p>
+            Here you'll include information about your store and its mission.
+        </p>
+        <!-- Main content goes here -->
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2023 EcoMart</p>
+    </div>
+
+</body>
+</html>
